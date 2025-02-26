@@ -1,6 +1,0 @@
-关于如何使用qwen模型，请参照官方教程https://github.com/QwenLM/Qwen
-本机cuda版本是12.4，未使用flash-attention。
-qwen-run.py是官方提供的运行示例，开始运行时会从hugging face下载代码，需要梯子，windows默认路径是C盘user/.cache。
-qwen-run-in-local.py能够直接加载使用本地模型。注意模型路径需要找到config.json文件，经测试运行正常。
-使用官方提供的modelscope运行方式可以不用梯子直接部署。
-模型大小：1.8B约3g，7b约15g，14b约30g
