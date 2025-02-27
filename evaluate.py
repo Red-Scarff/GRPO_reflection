@@ -15,6 +15,8 @@
 """Custom evaluation tasks for LightEval."""
 
 import random
+from datasets import load_dataset
+
 
 from lighteval.metrics.dynamic_metrics import (
     ExprExtractionConfig,
@@ -142,50 +144,58 @@ aime25 = LightevalTaskConfig(
 )
 """
 # toekn_count_metric is a simple metric that counts the number of tokens in the prediction
-from lighteval.metrics.simple import token_count_metric
+# from lighteval.metrics.simple import token_count_metric
 
 # 加载数据集
-dataset = load_dataset('json', data_files={'test': 'path/to/test.jsonl'})
+dataset = load_dataset('json', data_files={'test': '/root/nfs/Thinking_LLM/dataset/MATH-500/test.jsonl'})
 
-# Add necessary imports at the top of evaluate.py
-from transformers import AutoTokenizer  # Or use vllm's tokenizer if preferred
-from lighteval.metrics.metrics import Metric, MetricOutput  # Check your version's API
+# model_path = r"/root/nfs/Thinking_LLM/qwen/model/Qwen/Qwen2.5-Math-7B/"
 
-# Define the custom token count metric
-class CustomTokenCountMetric(Metric):
-    def __init__(self):
-        # Initialize tokenizer (adjust to match your model's tokenizer)
-        self.tokenizer = AutoTokenizer.from_pretrained("gpt2")  # Replace with your model's tokenizer
+# # Add necessary imports at the top of evaluate.py
+# from transformers import AutoTokenizer  # Or use vllm's tokenizer if preferred
+# from lighteval.metrics import Metric
 
-    def compute(self, predictions, references=None):
-        # predictions: List of model outputs (strings)
-        # references: Ignored here, as we only need output length
-        token_counts = []
-        for pred in predictions:
-            tokens = self.tokenizer.tokenize(pred)  # Tokenize the output
-            token_counts.append(len(tokens))  # Count tokens
-        # Return average token count across all predictions
-        avg_tokens = sum(token_counts) / len(token_counts) if token_counts else 0
-        return MetricOutput(
-            value=avg_tokens,
-            details={"token_counts": token_counts}  # Optional: per-sample counts
-        )
+# from enum import Enum
+# class MetricCategories(Enum):
+#     TOKEN_COUNT = "token_count"  # 自定义token计数类别
+#     ACCURACY = "accuracy"        # 原框架已有类别
 
-# Instantiate the custom metric
-custom_token_count = CustomTokenCountMetric()
+
+# # Define the custom token count metric
+# class CustomTokenCountMetric(Metric):
+#     def __init__(self):
+#         super().__init__(
+#             metric_name="token_count",
+#             higher_is_better=False,
+#             use_case="生成模型输出长度统计",
+#             sample_level_fn=self._compute_sample,
+#             corpus_level_fn=self._compute_corpus
+#         )
+#         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+
+#     def compute(self, predictions, references=None):
+#         token_counts = [len(self.tokenizer.tokenize(p)) for p in predictions]
+#         return {
+#             "average_tokens": sum(token_counts)/len(token_counts),  # 主指标
+#             "token_counts": token_counts,  # 详细数据
+#             "per_item_result": [{"tokens": c} for c in token_counts]  # 兼容Lighteval结果存储
+#         }
+# # Instantiate the custom metric
+# custom_token_count = CustomTokenCountMetric()
 
 math_500 = LightevalTaskConfig(
     name="math_500",
     suite=["custom"],
     prompt_function=math_prompt_fn,
-    hf_repo="你的本地数据集路径",
+    hf_repo="/root/nfs/Thinking_LLM/dataset/MATH-500",
     hf_subset="default",
     hf_avail_splits=["test"],
     evaluation_splits=["test"],
     few_shots_split=None,
     few_shots_select=None,
     generation_size=32768,
-    metric=[latex_gold_metric,custom_token_count],
+    metric=[latex_gold_metric],
+    # metric=[latex_gold_metric,CustomTokenCountMetric()],
     version=1,
 )
 """gpqa_diamond = LightevalTaskConfig(
