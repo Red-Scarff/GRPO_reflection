@@ -1,7 +1,7 @@
 from modelscope import AutoModelForCausalLM, AutoTokenizer
 import torch
 
-model_path = r"/root/nfs/Thinking_LLM/qwen/model/Qwen/Qwen2.5-1.5B-Instruct/"
+model_path = r"/root/nfs/Thinking_LLM/qwen/model/Qwen/Qwen2.5-Math-7B/"
 # 使用本地模型的代码，注意修改model_path为你的模型路径
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", trust_remote_code=True).eval()
