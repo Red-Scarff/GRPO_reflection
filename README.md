@@ -5,9 +5,7 @@ This repository implements the reasoning methodology from DeepSeek R1-zero, exte
 
 You can see a detailed description of the project in the report.
 
-The full dataset and model have been stored to Google Drive.
-
-[Google Drive]: https://drive.google.com/drive/folders/1DhyPW_p0xG4Qv342BuWSqmu84pEXKtTQ?usp=sharing
+The full dataset and model have been stored to [Google Drive](https://drive.google.com/drive/folders/1DhyPW_p0xG4Qv342BuWSqmu84pEXKtTQ?usp=sharing).
 
 If you want to use the project, remember to modify the paths in the project accordingly.
 
