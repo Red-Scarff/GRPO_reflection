@@ -5,7 +5,9 @@ This repository implements the reasoning methodology from DeepSeek R1-zero, exte
 
 You can see a detailed description of the project in the report.
 
-The full dataset and model have been stored to Google Drivehttps://drive.google.com/drive/folders/1DhyPW_p0xG4Qv342BuWSqmu84pEXKtTQ?usp=sharing. if you want to use the project, remember to modify the paths in the project accordingly.
+The full dataset and model have been stored to Google Drivehttps://drive.google.com/drive/folders/1DhyPW_p0xG4Qv342BuWSqmu84pEXKtTQ?usp=sharing. If you want to use the project, remember to modify the paths in the project accordingly.
+
+Among them, lora_model.tar stores the trained lora model, thinking_llm_datasets.tar.gz stores all the training and evaluating datasets of sft and grpo, and processed_openr1_dataset.zip stores the preprocessed dataset used to train lora, Qwen-2.5-Math-7B-Thinking-grpo.rar stores the best performing thinking model.
 
 ## Workflow
 
