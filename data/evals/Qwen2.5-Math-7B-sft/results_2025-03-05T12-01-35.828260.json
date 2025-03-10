@@ -1,0 +1,98 @@
+{
+  "config_general": {
+    "lighteval_sha": "?",
+    "num_fewshot_seeds": 1,
+    "override_batch_size": -1,
+    "max_samples": null,
+    "job_id": 0,
+    "start_time": 2157144.38890239,
+    "end_time": 2157247.07355297,
+    "total_evaluation_time_secondes": "102.68465057993308",
+    "model_name": "_home_tione_notebook_Thinking_LLM_data_Qwen2.5-Math-7B-sft",
+    "model_sha": "",
+    "model_dtype": null,
+    "model_size": null
+  },
+  "results": {
+    "custom|aime24|0": {
+      "extractive_match": 0.16666666666666666,
+      "extractive_match_stderr": 0.06920456654478331
+    },
+    "all": {
+      "extractive_match": 0.16666666666666666,
+      "extractive_match_stderr": 0.06920456654478331
+    }
+  },
+  "versions": {
+    "custom|aime24|0": 1
+  },
+  "config_tasks": {
+    "custom|aime24": {
+      "name": "aime24",
+      "prompt_function": "aime_prompt_fn",
+      "hf_repo": "dataset/AIME_2024",
+      "hf_subset": null,
+      "metric": [
+        {
+          "metric_name": "extractive_match",
+          "higher_is_better": true,
+          "category": "3",
+          "use_case": "1",
+          "sample_level_fn": "sample_level_fn",
+          "corpus_level_fn": "mean"
+        }
+      ],
+      "hf_revision": null,
+      "hf_filter": null,
+      "hf_avail_splits": [
+        "train"
+      ],
+      "trust_dataset": false,
+      "evaluation_splits": [
+        "train"
+      ],
+      "few_shots_split": null,
+      "few_shots_select": null,
+      "generation_size": 4096,
+      "generation_grammar": null,
+      "stop_sequence": [],
+      "num_samples": null,
+      "suite": [
+        "custom"
+      ],
+      "original_num_docs": 30,
+      "effective_num_docs": 30,
+      "must_remove_duplicate_docs": false,
+      "version": 1
+    }
+  },
+  "summary_tasks": {
+    "custom|aime24|0": {
+      "hashes": {
+        "hash_examples": "ddec8fc79d0a014b",
+        "hash_full_prompts": "fd2c067893d742e7",
+        "hash_input_tokens": "f6f823f35a4ceab6",
+        "hash_cont_tokens": "266080e2ab0dc991"
+      },
+      "truncated": 0,
+      "non_truncated": 30,
+      "padded": 0,
+      "non_padded": 30,
+      "effective_few_shots": 0.0,
+      "num_truncated_few_shots": 0
+    }
+  },
+  "summary_general": {
+    "hashes": {
+      "hash_examples": "c903e836a519cf98",
+      "hash_full_prompts": "fd36e7ae4180c017",
+      "hash_input_tokens": "30c11759dff39af8",
+      "hash_cont_tokens": "6ad958d5e6da2cce"
+    },
+    "truncated": 0,
+    "non_truncated": 30,
+    "padded": 0,
+    "non_padded": 30,
+    "num_truncated_few_shots": 0
+  }
+}

@@ -1,0 +1,7 @@
+{"time":"2025-03-06T01:09:02.386773165+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/tione/notebook/Thinking_LLM/wandb/run-20250306_010902-xjunacvl/logs/debug-core.log"}
+{"time":"2025-03-06T01:09:02.602131732+08:00","level":"INFO","msg":"created new stream","id":"xjunacvl"}
+{"time":"2025-03-06T01:09:02.602176378+08:00","level":"INFO","msg":"stream: started","id":"xjunacvl"}
+{"time":"2025-03-06T01:09:02.602196456+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xjunacvl"}
+{"time":"2025-03-06T01:09:02.602217394+08:00","level":"INFO","msg":"handler: started","stream_id":"xjunacvl"}
+{"time":"2025-03-06T01:09:02.602225143+08:00","level":"INFO","msg":"sender: started","stream_id":"xjunacvl"}
+{"time":"2025-03-06T01:09:03.240533531+08:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,47 @@
+100%|██████████| 58/58 [5:29:08<00:00, 345.47s/it][INFO|trainer.py:2657] 2025-03-06 06:50:15,522 >>
+{'loss': 0.0, 'grad_norm': 0.0842115506529808, 'learning_rate': 5e-07, 'rewards/accuracy_reward': 0.07924107555299997, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.3787165507674217, 'reward': 0.45795759931206703, 'reward_std': 0.19825360365211964, 'completion_length': 1024.0, 'kl': 0.0, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.09295375645160675, 'learning_rate': 2.5e-06, 'rewards/accuracy_reward': 0.07728795026196167, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.37141743674874306, 'reward': 0.4487053733319044, 'reward_std': 0.19285833020694554, 'completion_length': 1024.0, 'kl': 5.1587820053100586e-05, 'epoch': 0.09}
+{'loss': 0.0, 'grad_norm': 0.08769763261079788, 'learning_rate': 2.956412726139078e-06, 'rewards/accuracy_reward': 0.09419643366709352, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.38344421684741975, 'reward': 0.47764064818620683, 'reward_std': 0.21347347237169742, 'completion_length': 1024.0, 'kl': 0.0001229226589202881, 'epoch': 0.17}
+{'loss': 0.0, 'grad_norm': 0.08719994127750397, 'learning_rate': 2.7836719084521715e-06, 'rewards/accuracy_reward': 0.15401786379516125, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.4108660973608494, 'reward': 0.5648839496076107, 'reward_std': 0.24717093519866468, 'completion_length': 1024.0, 'kl': 0.0009487152099609375, 'epoch': 0.26}
+{'loss': 0.0001, 'grad_norm': 0.08527765423059464, 'learning_rate': 2.4946839873611927e-06, 'rewards/accuracy_reward': 0.19575893674045802, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.4400870770215988, 'reward': 0.6358460031449795, 'reward_std': 0.252927677705884, 'completion_length': 1024.0, 'kl': 0.0029764175415039062, 'epoch': 0.34}
+{'loss': 0.0002, 'grad_norm': 0.0857623741030693, 'learning_rate': 2.1156192081791355e-06, 'rewards/accuracy_reward': 0.20758929699659348, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.46594868376851084, 'reward': 0.6735379666090011, 'reward_std': 0.2565999083220959, 'completion_length': 1024.0, 'kl': 0.005628204345703125, 'epoch': 0.43}
+{'loss': 0.0003, 'grad_norm': 0.0881551131606102, 'learning_rate': 1.6808050203829845e-06, 'rewards/accuracy_reward': 0.21205358020961285, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.4852678753435612, 'reward': 0.6973214462399483, 'reward_std': 0.25630060099065305, 'completion_length': 1023.9375015258789, 'kl': 0.00787353515625, 'epoch': 0.51}
+{'loss': 0.0004, 'grad_norm': 0.09618648141622543, 'learning_rate': 1.2296174432791415e-06, 'rewards/accuracy_reward': 0.20714286733418702, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.49706028699874877, 'reward': 0.7042031422257423, 'reward_std': 0.24390090983361007, 'completion_length': 1024.0, 'kl': 0.00962677001953125, 'epoch': 0.6}
+{'loss': 0.0004, 'grad_norm': 0.10909710824489594, 'learning_rate': 8.029152419343472e-07, 'rewards/accuracy_reward': 0.21897322479635478, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.5069219030439853, 'reward': 0.7258951023221016, 'reward_std': 0.2535766739398241, 'completion_length': 1024.0, 'kl': 0.0109466552734375, 'epoch': 0.68}
+{'loss': 0.0005, 'grad_norm': 0.08712124079465866, 'learning_rate': 4.3933982822017883e-07, 'rewards/accuracy_reward': 0.22388393767178058, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.5066205553710461, 'reward': 0.730504484474659, 'reward_std': 0.2503094054758549, 'completion_length': 1024.0, 'kl': 0.01131591796875, 'epoch': 0.77}
+{'loss': 0.0005, 'grad_norm': 0.08544088155031204, 'learning_rate': 1.718159615201853e-07, 'rewards/accuracy_reward': 0.21138393823057414, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.507790195196867, 'reward': 0.7191741272807122, 'reward_std': 0.23644511140882968, 'completion_length': 1024.0, 'kl': 0.0115692138671875, 'epoch': 0.85}
+{'loss': 0.0005, 'grad_norm': 0.08298638463020325, 'learning_rate': 2.4570139579284723e-08, 'rewards/accuracy_reward': 0.21785715278238058, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.5111027017235756, 'reward': 0.728959834575653, 'reward_std': 0.2534869909286499, 'completion_length': 1023.9877243041992, 'kl': 0.011822509765625, 'epoch': 0.94}
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████| 58/58 [5:29:08<00:00, 340.49s/it]
+{'train_runtime': 19750.3961, 'train_samples_per_second': 0.38, 'train_steps_per_second': 0.003, 'train_loss': 0.0011946958517010204, 'rewards/accuracy_reward': 0.21130953480799994, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.5128645946582159, 'reward': 0.7241741319497427, 'reward_std': 0.2433195480455955, 'completion_length': 1024.0, 'kl': 0.011995951334635416, 'epoch': 0.99}
+***** train metrics *****
+  total_flos               =        0GF
+  train_loss               =     0.0012
+  train_runtime            = 5:29:10.39
+  train_samples            =       7500
+  train_samples_per_second =       0.38
+  train_steps_per_second   =      0.003
+2025-03-06 06:50:15 - INFO - __main__ - *** Save model ***
+[INFO|trainer.py:3942] 2025-03-06 06:50:17,787 >> Saving model checkpoint to data/Qwen-2.5-7B-Thinking
+[INFO|configuration_utils.py:423] 2025-03-06 06:50:17,789 >> Configuration saved in data/Qwen-2.5-7B-Thinking/config.json
+[INFO|configuration_utils.py:909] 2025-03-06 06:50:17,789 >> Configuration saved in data/Qwen-2.5-7B-Thinking/generation_config.json
+[INFO|modeling_utils.py:3048] 2025-03-06 06:50:23,178 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 4 checkpoint shards. You can find where each parameters has been saved in the index located at data/Qwen-2.5-7B-Thinking/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2500] 2025-03-06 06:50:23,179 >> tokenizer config file saved in data/Qwen-2.5-7B-Thinking/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-06 06:50:23,179 >> Special tokens file saved in data/Qwen-2.5-7B-Thinking/special_tokens_map.json
+2025-03-06 06:50:23 - INFO - __main__ - Model saved to data/Qwen-2.5-7B-Thinking
+[INFO|configuration_utils.py:423] 2025-03-06 06:50:23,344 >> Configuration saved in data/Qwen-2.5-7B-Thinking/config.json
+2025-03-06 06:50:23 - INFO - __main__ - *** Evaluate ***
+[INFO|trainer.py:4258] 2025-03-06 06:50:23,345 >>
+***** Running Evaluation *****
+[INFO|trainer.py:4260] 2025-03-06 06:50:23,345 >>   Num examples = 5000
+[INFO|trainer.py:4263] 2025-03-06 06:50:23,346 >>   Batch size = 16
+100%|██████████| 313/313 [3:02:17<00:00, 34.94s/it]  
+***** eval metrics *****
+  eval_loss               =     0.0005
+  eval_runtime            = 3:02:54.32
+  eval_samples            =       5000
+  eval_samples_per_second =      0.456
+  eval_steps_per_second   =      0.004

@@ -1,0 +1,15 @@
+{"time":"2025-03-04T20:57:35.660007243+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/tione/notebook/Thinking_LLM/wandb/run-20250304_205735-wvv2qbdh/logs/debug-core.log"}
+{"time":"2025-03-04T20:57:35.874964168+08:00","level":"INFO","msg":"created new stream","id":"wvv2qbdh"}
+{"time":"2025-03-04T20:57:35.875006864+08:00","level":"INFO","msg":"stream: started","id":"wvv2qbdh"}
+{"time":"2025-03-04T20:57:35.875020923+08:00","level":"INFO","msg":"handler: started","stream_id":"wvv2qbdh"}
+{"time":"2025-03-04T20:57:35.875044891+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"wvv2qbdh"}
+{"time":"2025-03-04T20:57:35.875043281+08:00","level":"INFO","msg":"sender: started","stream_id":"wvv2qbdh"}
+{"time":"2025-03-04T20:57:36.453094782+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T21:12:07.334078246+08:00","level":"INFO","msg":"stream: closing","id":"wvv2qbdh"}
+{"time":"2025-03-04T21:12:07.334111084+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T21:12:07.334673993+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T21:12:08.580749537+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T21:12:09.563850013+08:00","level":"INFO","msg":"handler: closed","stream_id":"wvv2qbdh"}
+{"time":"2025-03-04T21:12:09.563919507+08:00","level":"INFO","msg":"sender: closed","stream_id":"wvv2qbdh"}
+{"time":"2025-03-04T21:12:09.563914727+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wvv2qbdh"}
+{"time":"2025-03-04T21:12:09.564027267+08:00","level":"INFO","msg":"stream: closed","id":"wvv2qbdh"}

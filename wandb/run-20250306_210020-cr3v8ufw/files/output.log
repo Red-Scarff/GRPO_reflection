@@ -1,0 +1,131 @@
+ 26%|██▌       | 15/58 [27:11<1:21:25, 113.63s/it]wandb: WARNING Serializing object of type str that is 118358 bytes
+{'loss': 0.0, 'grad_norm': 0.487824410200119, 'learning_rate': 5e-07, 'rewards/accuracy_reward': 0.4620535932481289, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.20266742072999477, 'reward': 0.6647210121154785, 'reward_std': 0.46294446289539337, 'completion_length': 623.0089492797852, 'kl': 0.0, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.8933221697807312, 'learning_rate': 2.5e-06, 'rewards/accuracy_reward': 0.4115513600409031, 'rewards/format_reward': 0.0013950893480796367, 'rewards/reflection_reward': 0.19945871829986572, 'reward': 0.6124051688238978, 'reward_std': 0.4535958990454674, 'completion_length': 608.2547702789307, 'kl': 3.590807318687439e-05, 'epoch': 0.09}
+{'loss': 0.0, 'grad_norm': 0.4223373532295227, 'learning_rate': 2.956412726139078e-06, 'rewards/accuracy_reward': 0.43928573206067084, 'rewards/format_reward': 0.00044642859138548373, 'rewards/reflection_reward': 0.2011160772293806, 'reward': 0.6408482469618321, 'reward_std': 0.4453561007976532, 'completion_length': 608.1520301818848, 'kl': 0.0002837657928466797, 'epoch': 0.17}
+{'loss': 0.0001, 'grad_norm': 0.14186005294322968, 'learning_rate': 2.7836719084521715e-06, 'rewards/accuracy_reward': 0.5430803820490837, 'rewards/format_reward': 0.00022321429569274187, 'rewards/reflection_reward': 0.22333260402083396, 'reward': 0.7666362032294274, 'reward_std': 0.4148821607232094, 'completion_length': 622.2984657287598, 'kl': 0.0014875411987304687, 'epoch': 0.26}
+100%|██████████| 58/58 [2:07:44<00:00, 143.75s/it][INFO|trainer.py:2657] 2025-03-06 23:08:06,820 >>
+{'loss': 0.0001, 'grad_norm': 0.11470915377140045, 'learning_rate': 2.4946839873611927e-06, 'rewards/accuracy_reward': 0.5828125238418579, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.24975894019007683, 'reward': 0.8325714781880379, 'reward_std': 0.38247390612959864, 'completion_length': 640.4904281616211, 'kl': 0.0032451629638671877, 'epoch': 0.34}
+{'loss': 0.0001, 'grad_norm': 0.07414162158966064, 'learning_rate': 2.1156192081791355e-06, 'rewards/accuracy_reward': 0.6098214596509933, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.26197769679129124, 'reward': 0.871799148619175, 'reward_std': 0.34133581928908824, 'completion_length': 653.9506988525391, 'kl': 0.0036543846130371095, 'epoch': 0.43}
+{'loss': 0.0002, 'grad_norm': 0.06690091639757156, 'learning_rate': 1.6808050203829845e-06, 'rewards/accuracy_reward': 0.6008928798139095, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.272712067514658, 'reward': 0.8736049547791481, 'reward_std': 0.3347925666719675, 'completion_length': 658.1754745483398, 'kl': 0.00395660400390625, 'epoch': 0.51}
+{'loss': 0.0002, 'grad_norm': 0.07217980921268463, 'learning_rate': 1.2296174432791415e-06, 'rewards/accuracy_reward': 0.5857143171131611, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.26993528194725513, 'reward': 0.8556495919823647, 'reward_std': 0.32877047285437583, 'completion_length': 658.1547149658203, 'kl': 0.005608749389648437, 'epoch': 0.6}
+{'loss': 0.0002, 'grad_norm': 0.07198800146579742, 'learning_rate': 8.029152419343472e-07, 'rewards/accuracy_reward': 0.6120536006987095, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.28143528290092945, 'reward': 0.893488883972168, 'reward_std': 0.3231948476284742, 'completion_length': 640.4370803833008, 'kl': 0.004941177368164062, 'epoch': 0.68}
+{'loss': 0.0002, 'grad_norm': 0.0757644772529602, 'learning_rate': 4.3933982822017883e-07, 'rewards/accuracy_reward': 0.5915178894996643, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.27791295759379864, 'reward': 0.8694308340549469, 'reward_std': 0.32997492998838424, 'completion_length': 661.5524871826171, 'kl': 0.0050933837890625, 'epoch': 0.77}
+{'loss': 0.0002, 'grad_norm': 0.07170465588569641, 'learning_rate': 1.718159615201853e-07, 'rewards/accuracy_reward': 0.5908482432365417, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.28645760342478754, 'reward': 0.8773058354854584, 'reward_std': 0.31502035818994045, 'completion_length': 666.6067276000977, 'kl': 0.004908180236816407, 'epoch': 0.85}
+{'loss': 0.0002, 'grad_norm': 0.06919294595718384, 'learning_rate': 2.4570139579284723e-08, 'rewards/accuracy_reward': 0.6200893171131611, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.2826183147728443, 'reward': 0.9027076363563538, 'reward_std': 0.32895161882042884, 'completion_length': 665.0297149658203, 'kl': 0.004604721069335937, 'epoch': 0.94}
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████| 58/58 [2:07:44<00:00, 132.15s/it]
+{'train_runtime': 7670.5133, 'train_samples_per_second': 0.978, 'train_steps_per_second': 0.008, 'train_loss': -0.00026673821627982937, 'rewards/accuracy_reward': 0.624628002444903, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.2852232288569212, 'reward': 0.90985124061505, 'reward_std': 0.32015726156532764, 'completion_length': 649.3147608439127, 'kl': 0.005171457926432292, 'epoch': 0.99}
+***** train metrics *****
+  total_flos               =        0GF
+  train_loss               =    -0.0003
+  train_runtime            = 2:07:50.51
+  train_samples            =       7500
+  train_samples_per_second =      0.978
+  train_steps_per_second   =      0.008
+2025-03-06 23:08:06 - INFO - __main__ - *** Save model ***
+[INFO|trainer.py:3942] 2025-03-06 23:08:07,391 >> Saving model checkpoint to data/Qwen-2.5-1.5B-Thinking-v2
+[INFO|configuration_utils.py:423] 2025-03-06 23:08:07,393 >> Configuration saved in data/Qwen-2.5-1.5B-Thinking-v2/config.json
+[INFO|configuration_utils.py:909] 2025-03-06 23:08:07,394 >> Configuration saved in data/Qwen-2.5-1.5B-Thinking-v2/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-06 23:08:08,607 >> Model weights saved in data/Qwen-2.5-1.5B-Thinking-v2/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-06 23:08:08,609 >> tokenizer config file saved in data/Qwen-2.5-1.5B-Thinking-v2/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-06 23:08:08,609 >> Special tokens file saved in data/Qwen-2.5-1.5B-Thinking-v2/special_tokens_map.json
+2025-03-06 23:08:08 - INFO - __main__ - Model saved to data/Qwen-2.5-1.5B-Thinking-v2
+[INFO|configuration_utils.py:423] 2025-03-06 23:08:08,723 >> Configuration saved in data/Qwen-2.5-1.5B-Thinking-v2/config.json
+2025-03-06 23:08:08 - INFO - __main__ - *** Evaluate ***
+[INFO|trainer.py:4258] 2025-03-06 23:08:08,724 >>
+***** Running Evaluation *****
+[INFO|trainer.py:4260] 2025-03-06 23:08:08,724 >>   Num examples = 5000
+[INFO|trainer.py:4263] 2025-03-06 23:08:08,724 >>   Batch size = 16
+Traceback (most recent call last):
+  File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 280, in <module>
+    main(script_args, training_args, model_args)
+  File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 264, in main
+    metrics = trainer.evaluate()
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 4105, in evaluate
+    output = eval_loop(
+             ^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 4299, in evaluation_loop
+    losses, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 725, in prediction_step
+    loss = self.compute_loss(model, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 700, in compute_loss
+    per_token_logps = self._get_per_token_logps(model, input_ids, attention_mask, logits_to_keep)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 480, in _get_per_token_logps
+    logits = model(input_ids=input_ids, attention_mask=attention_mask, logits_to_keep=logits_to_keep + 1).logits
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 856, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 549, in forward
+    causal_mask = self._update_causal_mask(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 622, in _update_causal_mask
+    raise ValueError(
+ValueError: You are attempting to perform batched generation with padding_side='right' this may lead to unexpected behaviour for Flash Attention version of Qwen2. Make sure to  call `tokenizer.padding_side  = 'left'` before tokenizing the input.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 280, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 264, in main
+[rank0]:     metrics = trainer.evaluate()
+[rank0]:               ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 4105, in evaluate
+[rank0]:     output = eval_loop(
+[rank0]:              ^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 4299, in evaluation_loop
+[rank0]:     losses, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+[rank0]:                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 725, in prediction_step
+[rank0]:     loss = self.compute_loss(model, inputs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 700, in compute_loss
+[rank0]:     per_token_logps = self._get_per_token_logps(model, input_ids, attention_mask, logits_to_keep)
+[rank0]:                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 480, in _get_per_token_logps
+[rank0]:     logits = model(input_ids=input_ids, attention_mask=attention_mask, logits_to_keep=logits_to_keep + 1).logits
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 856, in forward
+[rank0]:     outputs = self.model(
+[rank0]:               ^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 549, in forward
+[rank0]:     causal_mask = self._update_causal_mask(
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 622, in _update_causal_mask
+[rank0]:     raise ValueError(
+[rank0]: ValueError: You are attempting to perform batched generation with padding_side='right' this may lead to unexpected behaviour for Flash Attention version of Qwen2. Make sure to  call `tokenizer.padding_side  = 'left'` before tokenizing the input.

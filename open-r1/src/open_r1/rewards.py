@@ -10,7 +10,7 @@ from math_verify import LatexExtractionConfig, parse, verify
 
 from .utils import is_e2b_available
 
-
+from collections import defaultdict
 if is_e2b_available():
     from dotenv import load_dotenv
     from e2b_code_interpreter import Sandbox
@@ -376,35 +376,63 @@ def get_code_format_reward(language: str = "python"):
     return code_format_reward
 
 
-def reflection_reward(completions, **kwargs):
-    """奖励函数鼓励模型在推理过程中进行自我验证和反思
+def reflection_reward(completions,**kwargs):
+    """强化四维反思奖励机制：验证/回溯/子目标/逆向推理
     
-    参数:
-        patterns_config (list[dict]): 可配置的正则模式及参数，默认为
-            [
-                {"pattern": r"(double[- ]?check|verify|re[-]?examine)", "weight": 0.3, "decay": 0.5},
-                {"pattern": r"(cross[- ]?validation|alternative approach)", "weight": 0.5, "decay": 0.6},
-                {"pattern": r"(initial (thought|calculation) (was|is) incorrect)", "weight": 0.2, "decay": 0.4}
-            ]
-        compensation (float): 标准化补偿系数，默认1.2
+    主要改进点：
+    1. 模式匹配升级：更精准覆盖四维度的语义特征
+    2. 权重平衡调整：根据认知行为重要性重新配比
+    3. 衰减函数优化：抑制高频重复的有效性衰减
+    4. 补偿机制重构：基于对数函数的非线性调节
     """
-    # 配置参数处理
-    patterns_config = kwargs.get('patterns_config', [
-        {"pattern": r"(double[- ]?check|verify|re[-]?examine|confirm|validate)",
-         "weight": 0.3, "decay": 0.5},
-        {"pattern": r"(cross[- ]?validation|alternative approach|step[- ]?verification)",
-         "weight": 0.5, "decay": 0.6},
-        {"pattern": r"(initial (thought|calculation) (was|is) (incorrect|flawed)|mistake in (previous|step \d+)|correcting (error|myself))",
-         "weight": 0.2, "decay": 0.4}
-    ])
-    compensation = kwargs.get('compensation_factor', 1.2)
-    
-    # 预编译正则表达式
+    patterns_config = [
+        {   # 回溯维度：增强核心错误关键词
+            "pattern": r"""(?x)
+            \b(backtrack|error|fix|mistake)\b|       # 核心错误关键词
+            re-eval(uate|ation)\b|                   # 重评估动作
+            (flawed|incorrect)\s+(approach|step)     # 错误方法描述
+            """,
+            "weight": 0.5,
+            "decay_base": 2.5
+        },
+        {   # 验证维度：强化基础校验词
+            "pattern": r"""(?x)
+            \b(verify|check|confirm|test)\b|        # 基础校验动词
+            (cross|re)-?val(idate|idation)\b|       # 验证动作
+            (unit|dimension)\s+analysis|            # 分析类型
+            (edge\s+case|boundary)\s+check          # 特殊检查
+            """,
+            "weight": 0.5,
+            "decay_base": 2.5
+        },
+        {   # 子目标维度：简化解构关键词 
+            "pattern": r"""(?x)
+            \b(step|stage|phase|subtask)\b|        # 阶段关键词
+            decompose\sin(to)?\s+\d+|              # 分解动作
+            (milestone|checkpoint)\s+\d+|          # 进度节点
+            track\sprogress\s(at|on)               # 进度追踪
+            """,
+            "weight": 0.5,
+            "decay_base": 2.5
+
+        },
+        {   # 逆向推理：核心目标词
+            "pattern": r"""(?x)
+            \b(target|goal|required)\b|           # 目标关键词
+            work(ing)?\sbackwards\b|               # 逆向动作
+            reverse\s(engineer|logic)|             # 逆向方法
+            deduce\sfrom\s(final|outcome)          # 结果推导
+            """,
+            "weight": 0.5,
+            "decay_base": 2.5
+        }
+    ]
+
     compiled_patterns = [
         {
-            "regex": re.compile(config["pattern"], re.IGNORECASE),
+            "regex": re.compile(config["pattern"]),
             "weight": config["weight"],
-            "decay": config["decay"]
+            "decay": lambda x, b=config["decay_base"]: 1/(1 + (x-1)/b)  # 渐进式衰减函数
         }
         for config in patterns_config
     ]
@@ -412,34 +440,29 @@ def reflection_reward(completions, **kwargs):
     completion_contents = [completion[0]["content"] for completion in completions]
     rewards = []
     
+    assert len(compiled_patterns) == 4
+    # assert math.isclose(sum(p["weight"] for p in compiled_patterns), 1.0)
+
     for content in completion_contents:
         try:
-            # 提取推理部分
-            reasoning_part = re.search(r"<think>(.*?)", content, re.DOTALL)
-            if not reasoning_part:
-                rewards.append(0.0)
-                continue
-                
-            reasoning_text = reasoning_part.group(1).lower()
-            total_score = 0.0
+            full_text = content.lower()  # 使用全部文本
+            dimension_scores = defaultdict(float)
             
-            # 并行模式匹配
+            # 全文本维度评分
             for pattern in compiled_patterns:
-                matches = pattern["regex"].finditer(reasoning_text)
-                match_count = sum(1 for _ in matches)
-                
-                if match_count > 0:
-                    # 动态衰减计算：1 - decay^(匹配次数)
-                    score = pattern["weight"] * (1 - pattern["decay"] ** match_count)
-                    total_score += score
+                matches = pattern["regex"].findall(full_text)
+                for i, _ in enumerate(matches, 1):
+                    decay_factor = pattern["decay"](i)
+                    dimension_scores[id(pattern)] += pattern["weight"] * decay_factor
             
-            # 结果标准化
-            final_reward = min(1.0, total_score * compensation)
+            # 补偿计算（保持原逻辑）
+            raw_score = sum(dimension_scores.values())
+            compensated = 0.8 * math.log1p(raw_score)  # 更平缓的增长曲线
+            final_reward = 1 - 1/(1 + compensated**1.2)  # 双曲衰减控制
             rewards.append(round(final_reward, 2))
             
         except Exception as e:
-            # 异常处理
-            print(f"Error processing reflection reward: {str(e)}")
+            print(f"Reflection reward error: {str(e)}")
             rewards.append(0.0)
     
     return rewards

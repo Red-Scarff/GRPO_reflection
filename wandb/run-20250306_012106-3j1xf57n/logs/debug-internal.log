@@ -1,0 +1,32 @@
+{"time":"2025-03-06T01:21:06.054700687+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/tione/notebook/Thinking_LLM/wandb/run-20250306_012106-3j1xf57n/logs/debug-core.log"}
+{"time":"2025-03-06T01:21:06.270985041+08:00","level":"INFO","msg":"created new stream","id":"3j1xf57n"}
+{"time":"2025-03-06T01:21:06.271024257+08:00","level":"INFO","msg":"stream: started","id":"3j1xf57n"}
+{"time":"2025-03-06T01:21:06.271043875+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"3j1xf57n"}
+{"time":"2025-03-06T01:21:06.271064913+08:00","level":"INFO","msg":"sender: started","stream_id":"3j1xf57n"}
+{"time":"2025-03-06T01:21:06.271078522+08:00","level":"INFO","msg":"handler: started","stream_id":"3j1xf57n"}
+{"time":"2025-03-06T01:21:06.872177078+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T01:53:34.236856628+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T02:49:16.57284616+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T03:14:07.516839487+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T03:27:59.004854576+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T03:44:01.56484152+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T03:57:48.956842044+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T04:41:36.701661021+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.0.0.2:56190->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-06T04:41:36.701707097+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.0.0.2:56190->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-03-06T05:52:38.428839628+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T06:36:40.348853997+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T06:50:27.740859187+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T07:28:33.308854237+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T07:31:00.764847385+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T07:43:30.332847005+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T07:55:02.556855569+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T08:03:01.788843538+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T08:11:01.020831214+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/3j1xf57n/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-06T09:53:17.929117939+08:00","level":"INFO","msg":"stream: closing","id":"3j1xf57n"}
+{"time":"2025-03-06T09:53:17.929159815+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-06T09:53:17.929890099+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-06T09:53:19.100883461+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-06T09:53:19.931134517+08:00","level":"INFO","msg":"handler: closed","stream_id":"3j1xf57n"}
+{"time":"2025-03-06T09:53:19.931205231+08:00","level":"INFO","msg":"sender: closed","stream_id":"3j1xf57n"}
+{"time":"2025-03-06T09:53:19.931209891+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"3j1xf57n"}
+{"time":"2025-03-06T09:53:19.931405583+08:00","level":"INFO","msg":"stream: closed","id":"3j1xf57n"}

@@ -1,0 +1,2 @@
+  2%|▏         | 1/58 [05:38<5:21:38, 338.57s/it]
+{'loss': 0.0, 'grad_norm': 0.08437902480363846, 'learning_rate': 5e-07, 'rewards/accuracy_reward': 0.07924107555299997, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.45791295170783997, 'reward': 0.5371540263295174, 'reward_std': 0.20511119812726974, 'completion_length': 1024.0, 'kl': 0.0, 'epoch': 0.02}

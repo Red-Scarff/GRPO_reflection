@@ -1,0 +1,401 @@
+  9%|███████████                                                                                                            | 100/1071 [12:43<2:00:46,  7.46s/it][INFO|trainer.py:3942] 2025-03-04 01:06:20,441 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-100
+{'loss': 0.9164, 'grad_norm': 1.104192158966551, 'learning_rate': 4.6296296296296296e-06, 'epoch': 0.0}
+{'loss': 0.8935, 'grad_norm': 0.7725764310275292, 'learning_rate': 9.259259259259259e-06, 'epoch': 0.01}
+{'loss': 0.8396, 'grad_norm': 0.6161483047137788, 'learning_rate': 1.388888888888889e-05, 'epoch': 0.01}
+{'loss': 0.7589, 'grad_norm': 0.47017556360400736, 'learning_rate': 1.8518518518518518e-05, 'epoch': 0.02}
+{'loss': 0.7235, 'grad_norm': 0.2911242867742644, 'learning_rate': 2.314814814814815e-05, 'epoch': 0.02}
+{'loss': 0.6896, 'grad_norm': 0.2637815817943509, 'learning_rate': 2.777777777777778e-05, 'epoch': 0.03}
+{'loss': 0.6579, 'grad_norm': 0.19897074577426258, 'learning_rate': 3.240740740740741e-05, 'epoch': 0.03}
+{'loss': 0.6474, 'grad_norm': 0.20333751883764425, 'learning_rate': 3.7037037037037037e-05, 'epoch': 0.04}
+{'loss': 0.6437, 'grad_norm': 0.17568289835292822, 'learning_rate': 4.166666666666667e-05, 'epoch': 0.04}
+{'loss': 0.6368, 'grad_norm': 0.1779853583791185, 'learning_rate': 4.62962962962963e-05, 'epoch': 0.05}
+{'loss': 0.6095, 'grad_norm': 0.1770354680272721, 'learning_rate': 4.9999892648030464e-05, 'epoch': 0.05}
+{'loss': 0.6189, 'grad_norm': 0.1628819290532371, 'learning_rate': 4.999613543665713e-05, 'epoch': 0.06}
+{'loss': 0.6123, 'grad_norm': 0.1401756494063722, 'learning_rate': 4.998701165115822e-05, 'epoch': 0.06}
+{'loss': 0.5919, 'grad_norm': 0.1299320680353555, 'learning_rate': 4.997252346806187e-05, 'epoch': 0.07}
+{'loss': 0.5952, 'grad_norm': 0.15063076074655576, 'learning_rate': 4.995267434360207e-05, 'epoch': 0.07}
+{'loss': 0.5891, 'grad_norm': 0.13809877059499168, 'learning_rate': 4.992746901289426e-05, 'epoch': 0.07}
+{'loss': 0.5902, 'grad_norm': 0.13399657162082537, 'learning_rate': 4.989691348880567e-05, 'epoch': 0.08}
+{'loss': 0.5829, 'grad_norm': 0.1441272311184055, 'learning_rate': 4.9861015060520935e-05, 'epoch': 0.08}
+{'loss': 0.59, 'grad_norm': 0.13421952341239735, 'learning_rate': 4.981978229180323e-05, 'epoch': 0.09}
+{'loss': 0.5847, 'grad_norm': 0.13968938814413023, 'learning_rate': 4.977322501895136e-05, 'epoch': 0.09}
+[INFO|configuration_utils.py:423] 2025-03-04 01:06:20,443 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-100/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 01:06:20,444 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-100/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 01:06:21,606 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-100/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 01:06:21,607 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-100/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 01:06:21,607 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-100/special_tokens_map.json
+[2025-03-04 01:06:21,729] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step100 is about to be saved!
+[2025-03-04 01:06:21,735] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-100/global_step100/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 01:06:21,736] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-100/global_step100/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 01:06:21,744] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-100/global_step100/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 01:06:21,748] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 01:06:23,408] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 01:06:23,409] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-100/global_step100/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 01:06:24,149] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step100 is ready now!
+ 19%|██████████████████████▏                                                                                                | 200/1071 [25:17<1:48:21,  7.46s/it][INFO|trainer.py:3942] 2025-03-04 01:18:53,903 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-200
+{'loss': 0.5718, 'grad_norm': 0.13156873445451864, 'learning_rate': 4.97213543484532e-05, 'epoch': 0.1}
+{'loss': 0.5794, 'grad_norm': 0.12825343162052993, 'learning_rate': 4.9664182654336254e-05, 'epoch': 0.1}
+{'loss': 0.5707, 'grad_norm': 0.12887487771372863, 'learning_rate': 4.9601723575215696e-05, 'epoch': 0.11}
+{'loss': 0.5742, 'grad_norm': 0.138196499061822, 'learning_rate': 4.953399201104084e-05, 'epoch': 0.11}
+{'loss': 0.5623, 'grad_norm': 0.13299775682888895, 'learning_rate': 4.9461004119540686e-05, 'epoch': 0.12}
+{'loss': 0.5703, 'grad_norm': 0.14629229788049686, 'learning_rate': 4.9382777312369394e-05, 'epoch': 0.12}
+{'loss': 0.5663, 'grad_norm': 0.1351268754103537, 'learning_rate': 4.929933025095261e-05, 'epoch': 0.13}
+{'loss': 0.5661, 'grad_norm': 0.12848840278129764, 'learning_rate': 4.921068284203577e-05, 'epoch': 0.13}
+{'loss': 0.5586, 'grad_norm': 0.1268055585747012, 'learning_rate': 4.911685623293512e-05, 'epoch': 0.14}
+{'loss': 0.5654, 'grad_norm': 0.13132214981957205, 'learning_rate': 4.9017872806492995e-05, 'epoch': 0.14}
+{'loss': 0.5619, 'grad_norm': 0.14439718709579677, 'learning_rate': 4.8913756175738275e-05, 'epoch': 0.14}
+{'loss': 0.5699, 'grad_norm': 0.14532874911978585, 'learning_rate': 4.88045311782533e-05, 'epoch': 0.15}
+{'loss': 0.5535, 'grad_norm': 0.14103206779663738, 'learning_rate': 4.869022387024879e-05, 'epoch': 0.15}
+{'loss': 0.5575, 'grad_norm': 0.13204165719294012, 'learning_rate': 4.8570861520348e-05, 'epoch': 0.16}
+{'loss': 0.5613, 'grad_norm': 0.1563454287330918, 'learning_rate': 4.8446472603081585e-05, 'epoch': 0.16}
+{'loss': 0.5581, 'grad_norm': 0.9568158451177827, 'learning_rate': 4.8317086792094906e-05, 'epoch': 0.17}
+{'loss': 0.552, 'grad_norm': 0.15911869230384187, 'learning_rate': 4.8182734953069216e-05, 'epoch': 0.17}
+{'loss': 0.5508, 'grad_norm': 0.1402870899687162, 'learning_rate': 4.8043449136358436e-05, 'epoch': 0.18}
+{'loss': 0.5582, 'grad_norm': 0.135383868972452, 'learning_rate': 4.789926256934345e-05, 'epoch': 0.18}
+{'loss': 0.5445, 'grad_norm': 0.14761099645622586, 'learning_rate': 4.7750209648505426e-05, 'epoch': 0.19}
+[INFO|configuration_utils.py:423] 2025-03-04 01:18:53,905 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-200/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 01:18:53,905 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-200/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 01:18:55,194 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-200/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 01:18:55,195 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-200/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 01:18:55,195 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-200/special_tokens_map.json
+[2025-03-04 01:18:55,311] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step200 is about to be saved!
+[2025-03-04 01:18:55,317] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-200/global_step200/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 01:18:55,317] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-200/global_step200/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 01:18:55,326] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-200/global_step200/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 01:18:55,329] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 01:18:56,994] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 01:18:56,995] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-200/global_step200/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 01:18:57,717] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step200 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 01:18:57,720 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-100] due to args.save_total_limit
+ 28%|█████████████████████████████████▎                                                                                     | 300/1071 [37:52<1:35:56,  7.47s/it][INFO|trainer.py:3942] 2025-03-04 01:31:29,550 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-300
+{'loss': 0.5567, 'grad_norm': 0.1316821698648252, 'learning_rate': 4.75963259312205e-05, 'epoch': 0.19}
+{'loss': 0.5481, 'grad_norm': 0.12747553738121978, 'learning_rate': 4.7437648127277216e-05, 'epoch': 0.2}
+{'loss': 0.5549, 'grad_norm': 0.13028208539384148, 'learning_rate': 4.72742140901193e-05, 'epoch': 0.2}
+{'loss': 0.5533, 'grad_norm': 0.1335889572549566, 'learning_rate': 4.7106062807815534e-05, 'epoch': 0.21}
+{'loss': 0.5512, 'grad_norm': 0.1241377972152341, 'learning_rate': 4.6933234393758844e-05, 'epoch': 0.21}
+{'loss': 0.5413, 'grad_norm': 0.13391048113349432, 'learning_rate': 4.675577007709714e-05, 'epoch': 0.21}
+{'loss': 0.5586, 'grad_norm': 0.14194406477129212, 'learning_rate': 4.6573712192897826e-05, 'epoch': 0.22}
+{'loss': 0.5474, 'grad_norm': 0.1499248899764993, 'learning_rate': 4.638710417204855e-05, 'epoch': 0.22}
+{'loss': 0.5393, 'grad_norm': 0.13763509547465583, 'learning_rate': 4.619599053089654e-05, 'epoch': 0.23}
+{'loss': 0.5462, 'grad_norm': 0.1371354702677349, 'learning_rate': 4.6000416860628976e-05, 'epoch': 0.23}
+{'loss': 0.536, 'grad_norm': 0.13299521129110123, 'learning_rate': 4.580042981639698e-05, 'epoch': 0.24}
+{'loss': 0.5556, 'grad_norm': 0.1408810302361221, 'learning_rate': 4.559607710618579e-05, 'epoch': 0.24}
+{'loss': 0.5439, 'grad_norm': 0.1442934506153738, 'learning_rate': 4.5387407479433724e-05, 'epoch': 0.25}
+{'loss': 0.5408, 'grad_norm': 0.13969083572950966, 'learning_rate': 4.5174470715402764e-05, 'epoch': 0.25}
+{'loss': 0.5541, 'grad_norm': 0.14020541696045874, 'learning_rate': 4.4957317611303485e-05, 'epoch': 0.26}
+{'loss': 0.5468, 'grad_norm': 0.12453212624217226, 'learning_rate': 4.473599997017701e-05, 'epoch': 0.26}
+{'loss': 0.5403, 'grad_norm': 0.13693933090413465, 'learning_rate': 4.4510570588537206e-05, 'epoch': 0.27}
+{'loss': 0.5373, 'grad_norm': 0.1308050492441812, 'learning_rate': 4.428108324377576e-05, 'epoch': 0.27}
+{'loss': 0.551, 'grad_norm': 0.13416961632190286, 'learning_rate': 4.4047592681333285e-05, 'epoch': 0.28}
+{'loss': 0.5386, 'grad_norm': 0.1420543407079895, 'learning_rate': 4.381015460163949e-05, 'epoch': 0.28}
+[INFO|configuration_utils.py:423] 2025-03-04 01:31:29,552 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-300/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 01:31:29,553 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-300/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 01:31:30,732 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-300/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 01:31:30,733 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-300/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 01:31:30,734 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-300/special_tokens_map.json
+[2025-03-04 01:31:30,848] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step300 is about to be saved!
+[2025-03-04 01:31:30,854] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-300/global_step300/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 01:31:30,854] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-300/global_step300/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 01:31:30,862] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-300/global_step300/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 01:31:30,866] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 01:31:32,514] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 01:31:32,515] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-300/global_step300/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 01:31:33,261] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step300 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 01:31:33,264 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-200] due to args.save_total_limit
+ 37%|████████████████████████████████████████████▍                                                                          | 400/1071 [50:27<1:25:27,  7.64s/it][INFO|trainer.py:3942] 2025-03-04 01:44:04,444 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-400
+{'loss': 0.5469, 'grad_norm': 0.14145810667952732, 'learning_rate': 4.35688256468256e-05, 'epoch': 0.28}
+{'loss': 0.5476, 'grad_norm': 0.13720638926038622, 'learning_rate': 4.3323663387211976e-05, 'epoch': 0.29}
+{'loss': 0.5437, 'grad_norm': 0.13563668328980308, 'learning_rate': 4.3074726307574516e-05, 'epoch': 0.29}
+{'loss': 0.5405, 'grad_norm': 0.12716093202464748, 'learning_rate': 4.2822073793192705e-05, 'epoch': 0.3}
+{'loss': 0.5516, 'grad_norm': 0.14098906547503562, 'learning_rate': 4.256576611568299e-05, 'epoch': 0.3}
+{'loss': 0.5446, 'grad_norm': 0.13619720853429199, 'learning_rate': 4.230586441862062e-05, 'epoch': 0.31}
+{'loss': 0.528, 'grad_norm': 0.1253856051500859, 'learning_rate': 4.204243070295359e-05, 'epoch': 0.31}
+{'loss': 0.53, 'grad_norm': 0.1406858793093964, 'learning_rate': 4.1775527812211884e-05, 'epoch': 0.32}
+{'loss': 0.5445, 'grad_norm': 0.1331192512598292, 'learning_rate': 4.1505219417515884e-05, 'epoch': 0.32}
+{'loss': 0.5341, 'grad_norm': 0.15328587251299128, 'learning_rate': 4.123157000238726e-05, 'epoch': 0.33}
+{'loss': 0.5359, 'grad_norm': 0.13677937094230405, 'learning_rate': 4.0954644847366085e-05, 'epoch': 0.33}
+{'loss': 0.526, 'grad_norm': 0.13370405872971064, 'learning_rate': 4.06745100144378e-05, 'epoch': 0.34}
+{'loss': 0.5366, 'grad_norm': 0.1349971798897316, 'learning_rate': 4.039123233127377e-05, 'epoch': 0.34}
+{'loss': 0.5295, 'grad_norm': 0.12276671957380819, 'learning_rate': 4.010487937528918e-05, 'epoch': 0.35}
+{'loss': 0.5288, 'grad_norm': 0.1311399660777633, 'learning_rate': 3.981551945752215e-05, 'epoch': 0.35}
+{'loss': 0.5252, 'grad_norm': 0.121302965376135, 'learning_rate': 3.952322160633761e-05, 'epoch': 0.35}
+{'loss': 0.5385, 'grad_norm': 0.1241126550998396, 'learning_rate': 3.9228055550960395e-05, 'epoch': 0.36}
+{'loss': 0.5422, 'grad_norm': 0.12618877813305965, 'learning_rate': 3.893009170484085e-05, 'epoch': 0.36}
+{'loss': 0.5441, 'grad_norm': 0.12365503379736624, 'learning_rate': 3.8629401148857356e-05, 'epoch': 0.37}
+{'loss': 0.5207, 'grad_norm': 0.12477549810764114, 'learning_rate': 3.832605561435959e-05, 'epoch': 0.37}
+[INFO|configuration_utils.py:423] 2025-03-04 01:44:04,446 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-400/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 01:44:04,447 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-400/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 01:44:05,507 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-400/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 01:44:05,508 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-400/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 01:44:05,508 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-400/special_tokens_map.json
+[2025-03-04 01:44:05,623] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step400 is about to be saved!
+[2025-03-04 01:44:05,629] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-400/global_step400/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 01:44:05,629] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-400/global_step400/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 01:44:05,638] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-400/global_step400/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 01:44:05,641] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 01:44:07,292] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 01:44:07,293] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-400/global_step400/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 01:44:08,036] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step400 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 01:44:08,041 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-300] due to args.save_total_limit
+ 47%|██████████████████████████████████████████████████████▌                                                              | 500/1071 [1:03:02<1:11:01,  7.46s/it][INFO|trainer.py:3942] 2025-03-04 01:56:38,773 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-500
+{'loss': 0.5368, 'grad_norm': 0.12883682553454784, 'learning_rate': 3.8020127466056636e-05, 'epoch': 0.38}
+{'loss': 0.5317, 'grad_norm': 0.16501976486885844, 'learning_rate': 3.771168968475401e-05, 'epoch': 0.38}
+{'loss': 0.5431, 'grad_norm': 0.15381549798298877, 'learning_rate': 3.740081584994367e-05, 'epoch': 0.39}
+{'loss': 0.5266, 'grad_norm': 0.12436367810432009, 'learning_rate': 3.708758012225125e-05, 'epoch': 0.39}
+{'loss': 0.5267, 'grad_norm': 0.13980917411446567, 'learning_rate': 3.6772057225744616e-05, 'epoch': 0.4}
+{'loss': 0.5277, 'grad_norm': 0.13161507866855363, 'learning_rate': 3.6454322430108085e-05, 'epoch': 0.4}
+{'loss': 0.5308, 'grad_norm': 0.12881185388448713, 'learning_rate': 3.61344515326864e-05, 'epoch': 0.41}
+{'loss': 0.5313, 'grad_norm': 0.11946503008583277, 'learning_rate': 3.581252084040288e-05, 'epoch': 0.41}
+{'loss': 0.5341, 'grad_norm': 0.13952910924377102, 'learning_rate': 3.548860715155597e-05, 'epoch': 0.42}
+{'loss': 0.5269, 'grad_norm': 0.12775408063495766, 'learning_rate': 3.516278773749863e-05, 'epoch': 0.42}
+{'loss': 0.5379, 'grad_norm': 0.12958617206078785, 'learning_rate': 3.4835140324204826e-05, 'epoch': 0.42}
+{'loss': 0.5366, 'grad_norm': 0.129038621399353, 'learning_rate': 3.4505743073727545e-05, 'epoch': 0.43}
+{'loss': 0.5322, 'grad_norm': 0.11710892524213061, 'learning_rate': 3.41746745655529e-05, 'epoch': 0.43}
+{'loss': 0.5314, 'grad_norm': 0.1237195647885838, 'learning_rate': 3.3842013777854467e-05, 'epoch': 0.44}
+{'loss': 0.5254, 'grad_norm': 0.11949588017606849, 'learning_rate': 3.3507840068652685e-05, 'epoch': 0.44}
+{'loss': 0.5257, 'grad_norm': 0.13120312806429577, 'learning_rate': 3.317223315688358e-05, 'epoch': 0.45}
+{'loss': 0.5298, 'grad_norm': 0.138351431212845, 'learning_rate': 3.283527310338132e-05, 'epoch': 0.45}
+{'loss': 0.5291, 'grad_norm': 0.13597870306643373, 'learning_rate': 3.2497040291779344e-05, 'epoch': 0.46}
+{'loss': 0.5336, 'grad_norm': 0.12339369798294124, 'learning_rate': 3.215761540933436e-05, 'epoch': 0.46}
+{'loss': 0.5239, 'grad_norm': 0.1308990009012271, 'learning_rate': 3.1817079427678e-05, 'epoch': 0.47}
+[INFO|configuration_utils.py:423] 2025-03-04 01:56:38,775 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-500/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 01:56:38,775 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-500/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 01:56:39,898 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-500/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 01:56:39,899 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 01:56:39,899 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-500/special_tokens_map.json
+[2025-03-04 01:56:40,013] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step500 is about to be saved!
+[2025-03-04 01:56:40,019] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 01:56:40,020] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 01:56:40,029] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 01:56:40,032] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 01:56:41,688] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 01:56:41,688] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 01:56:42,422] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step500 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 01:56:42,426 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-400] due to args.save_total_limit
+ 56%|██████████████████████████████████████████████████████████████████▋                                                    | 600/1071 [1:15:37<58:40,  7.48s/it][INFO|trainer.py:3942] 2025-03-04 02:09:14,124 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-600
+{'loss': 0.5253, 'grad_norm': 0.1296644655698921, 'learning_rate': 3.147551358350061e-05, 'epoch': 0.47}
+{'loss': 0.528, 'grad_norm': 0.12139497725266411, 'learning_rate': 3.1132999359171737e-05, 'epoch': 0.48}
+{'loss': 0.5212, 'grad_norm': 0.1261644079457028, 'learning_rate': 3.078961846330214e-05, 'epoch': 0.48}
+{'loss': 0.5284, 'grad_norm': 0.1260509177135983, 'learning_rate': 3.0445452811251752e-05, 'epoch': 0.49}
+{'loss': 0.534, 'grad_norm': 0.12880382686555242, 'learning_rate': 3.0100584505588275e-05, 'epoch': 0.49}
+{'loss': 0.5303, 'grad_norm': 0.1237462077838711, 'learning_rate': 2.9755095816501233e-05, 'epoch': 0.49}
+{'loss': 0.5245, 'grad_norm': 0.12353487461592332, 'learning_rate': 2.9409069162175962e-05, 'epoch': 0.5}
+{'loss': 0.535, 'grad_norm': 0.12593253469807872, 'learning_rate': 2.906258708913228e-05, 'epoch': 0.5}
+{'loss': 0.524, 'grad_norm': 0.12439691282674747, 'learning_rate': 2.871573225253262e-05, 'epoch': 0.51}
+{'loss': 0.5156, 'grad_norm': 0.12767671589553684, 'learning_rate': 2.8368587396464117e-05, 'epoch': 0.51}
+{'loss': 0.516, 'grad_norm': 0.1314439709564011, 'learning_rate': 2.802123533419966e-05, 'epoch': 0.52}
+{'loss': 0.5333, 'grad_norm': 0.12846629970402396, 'learning_rate': 2.767375892844226e-05, 'epoch': 0.52}
+{'loss': 0.5129, 'grad_norm': 0.1247918739840925, 'learning_rate': 2.7326241071557745e-05, 'epoch': 0.53}
+{'loss': 0.5231, 'grad_norm': 0.11575928971490433, 'learning_rate': 2.6978764665800343e-05, 'epoch': 0.53}
+{'loss': 0.5262, 'grad_norm': 0.12594779882392673, 'learning_rate': 2.663141260353588e-05, 'epoch': 0.54}
+{'loss': 0.5234, 'grad_norm': 0.1251679782130783, 'learning_rate': 2.628426774746739e-05, 'epoch': 0.54}
+{'loss': 0.5281, 'grad_norm': 0.11726460035449683, 'learning_rate': 2.593741291086772e-05, 'epoch': 0.55}
+{'loss': 0.5285, 'grad_norm': 0.11793032546780813, 'learning_rate': 2.5590930837824044e-05, 'epoch': 0.55}
+{'loss': 0.5231, 'grad_norm': 0.12335761859030651, 'learning_rate': 2.5244904183498775e-05, 'epoch': 0.56}
+{'loss': 0.5238, 'grad_norm': 0.12249462037261105, 'learning_rate': 2.4899415494411737e-05, 'epoch': 0.56}
+[INFO|configuration_utils.py:423] 2025-03-04 02:09:14,126 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-600/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 02:09:14,127 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-600/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 02:09:15,228 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-600/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 02:09:15,229 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-600/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 02:09:15,230 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-600/special_tokens_map.json
+[2025-03-04 02:09:15,351] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step600 is about to be saved!
+[2025-03-04 02:09:15,356] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 02:09:15,357] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 02:09:15,365] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 02:09:15,368] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 02:09:17,057] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 02:09:17,058] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 02:09:17,772] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step600 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 02:09:17,776 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-500] due to args.save_total_limit
+ 65%|█████████████████████████████████████████████████████████████████████████████▊                                         | 700/1071 [1:28:13<46:23,  7.50s/it][INFO|trainer.py:3942] 2025-03-04 02:21:50,062 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-700
+{'loss': 0.5252, 'grad_norm': 0.11749107663290971, 'learning_rate': 2.4554547188748257e-05, 'epoch': 0.56}
+{'loss': 0.5214, 'grad_norm': 0.11478501061129379, 'learning_rate': 2.4210381536697855e-05, 'epoch': 0.57}
+{'loss': 0.5214, 'grad_norm': 0.11399726334657623, 'learning_rate': 2.386700064082827e-05, 'epoch': 0.57}
+{'loss': 0.5322, 'grad_norm': 0.1168016544449683, 'learning_rate': 2.35244864164994e-05, 'epoch': 0.58}
+{'loss': 0.5202, 'grad_norm': 0.1238118091382598, 'learning_rate': 2.3182920572321998e-05, 'epoch': 0.58}
+{'loss': 0.5265, 'grad_norm': 0.12038633125262199, 'learning_rate': 2.2842384590665645e-05, 'epoch': 0.59}
+{'loss': 0.5222, 'grad_norm': 0.12753075359346172, 'learning_rate': 2.2502959708220662e-05, 'epoch': 0.59}
+{'loss': 0.5127, 'grad_norm': 0.11517309892539766, 'learning_rate': 2.2164726896618682e-05, 'epoch': 0.6}
+{'loss': 0.5201, 'grad_norm': 0.11923806179689857, 'learning_rate': 2.1827766843116428e-05, 'epoch': 0.6}
+{'loss': 0.5185, 'grad_norm': 0.1170367827208997, 'learning_rate': 2.1492159931347317e-05, 'epoch': 0.61}
+{'loss': 0.5192, 'grad_norm': 0.1256737232513309, 'learning_rate': 2.1157986222145542e-05, 'epoch': 0.61}
+{'loss': 0.5248, 'grad_norm': 0.12173022394812832, 'learning_rate': 2.0825325434447106e-05, 'epoch': 0.62}
+{'loss': 0.5147, 'grad_norm': 0.11621224052126372, 'learning_rate': 2.0494256926272453e-05, 'epoch': 0.62}
+{'loss': 0.5225, 'grad_norm': 0.12548571515105914, 'learning_rate': 2.016485967579519e-05, 'epoch': 0.63}
+{'loss': 0.5228, 'grad_norm': 0.126736232746997, 'learning_rate': 1.9837212262501382e-05, 'epoch': 0.63}
+{'loss': 0.5169, 'grad_norm': 0.12217973408846863, 'learning_rate': 1.9511392848444042e-05, 'epoch': 0.63}
+{'loss': 0.5097, 'grad_norm': 0.12150539768688788, 'learning_rate': 1.9187479159597123e-05, 'epoch': 0.64}
+{'loss': 0.5111, 'grad_norm': 0.1267056891627462, 'learning_rate': 1.88655484673136e-05, 'epoch': 0.64}
+{'loss': 0.523, 'grad_norm': 0.11379047976679016, 'learning_rate': 1.854567756989191e-05, 'epoch': 0.65}
+{'loss': 0.5225, 'grad_norm': 0.11997118571355063, 'learning_rate': 1.8227942774255385e-05, 'epoch': 0.65}
+[INFO|configuration_utils.py:423] 2025-03-04 02:21:50,064 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-700/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 02:21:50,065 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-700/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 02:21:51,171 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-700/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 02:21:51,172 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-700/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 02:21:51,173 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-700/special_tokens_map.json
+[2025-03-04 02:21:51,294] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step700 is about to be saved!
+[2025-03-04 02:21:51,301] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-700/global_step700/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 02:21:51,301] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-700/global_step700/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 02:21:51,309] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-700/global_step700/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 02:21:51,312] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 02:21:53,009] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 02:21:53,010] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 02:21:53,711] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step700 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 02:21:53,716 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-600] due to args.save_total_limit
+ 75%|████████████████████████████████████████████████████████████████████████████████████████▉                              | 800/1071 [1:40:48<34:15,  7.58s/it][INFO|trainer.py:3942] 2025-03-04 02:34:25,629 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-800
+{'loss': 0.5221, 'grad_norm': 0.11951903098428109, 'learning_rate': 1.791241987774876e-05, 'epoch': 0.66}
+{'loss': 0.5267, 'grad_norm': 0.1217006199688308, 'learning_rate': 1.759918415005633e-05, 'epoch': 0.66}
+{'loss': 0.5154, 'grad_norm': 0.11090817740229197, 'learning_rate': 1.7288310315245997e-05, 'epoch': 0.67}
+{'loss': 0.5144, 'grad_norm': 0.11291903092862333, 'learning_rate': 1.697987253394337e-05, 'epoch': 0.67}
+{'loss': 0.5137, 'grad_norm': 0.11948509540596228, 'learning_rate': 1.6673944385640413e-05, 'epoch': 0.68}
+{'loss': 0.5169, 'grad_norm': 0.1178090804259634, 'learning_rate': 1.637059885114265e-05, 'epoch': 0.68}
+{'loss': 0.5204, 'grad_norm': 0.1171498440687661, 'learning_rate': 1.6069908295159146e-05, 'epoch': 0.69}
+{'loss': 0.5092, 'grad_norm': 0.12472857506511544, 'learning_rate': 1.5771944449039607e-05, 'epoch': 0.69}
+{'loss': 0.5207, 'grad_norm': 0.11585609631294805, 'learning_rate': 1.5476778393662395e-05, 'epoch': 0.7}
+{'loss': 0.5087, 'grad_norm': 0.11731784054836689, 'learning_rate': 1.5184480542477869e-05, 'epoch': 0.7}
+{'loss': 0.5147, 'grad_norm': 0.11382945882637618, 'learning_rate': 1.4895120624710818e-05, 'epoch': 0.7}
+{'loss': 0.5165, 'grad_norm': 0.11485088580818856, 'learning_rate': 1.4608767668726237e-05, 'epoch': 0.71}
+{'loss': 0.5133, 'grad_norm': 0.11746559676661589, 'learning_rate': 1.432548998556221e-05, 'epoch': 0.71}
+{'loss': 0.5099, 'grad_norm': 0.11037185061560584, 'learning_rate': 1.4045355152633919e-05, 'epoch': 0.72}
+{'loss': 0.513, 'grad_norm': 0.11345016607996954, 'learning_rate': 1.376842999761275e-05, 'epoch': 0.72}
+{'loss': 0.5227, 'grad_norm': 0.1139551959843152, 'learning_rate': 1.3494780582484126e-05, 'epoch': 0.73}
+{'loss': 0.5112, 'grad_norm': 0.11707315787515943, 'learning_rate': 1.3224472187788126e-05, 'epoch': 0.73}
+{'loss': 0.5217, 'grad_norm': 0.11663512389296703, 'learning_rate': 1.2957569297046424e-05, 'epoch': 0.74}
+{'loss': 0.5226, 'grad_norm': 0.1119208196948031, 'learning_rate': 1.2694135581379383e-05, 'epoch': 0.74}
+{'loss': 0.5141, 'grad_norm': 0.1191640064644136, 'learning_rate': 1.2434233884317017e-05, 'epoch': 0.75}
+[INFO|configuration_utils.py:423] 2025-03-04 02:34:25,631 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-800/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 02:34:25,631 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-800/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 02:34:26,708 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-800/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 02:34:26,709 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-800/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 02:34:26,709 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-800/special_tokens_map.json
+[2025-03-04 02:34:26,831] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step800 is about to be saved!
+[2025-03-04 02:34:26,837] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-800/global_step800/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 02:34:26,837] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-800/global_step800/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 02:34:26,845] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-800/global_step800/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 02:34:26,849] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 02:34:28,521] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 02:34:28,522] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 02:34:29,253] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step800 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 02:34:29,258 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-700] due to args.save_total_limit
+ 84%|████████████████████████████████████████████████████████████████████████████████████████████████████                   | 900/1071 [1:53:23<21:16,  7.47s/it][INFO|trainer.py:3942] 2025-03-04 02:47:00,067 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-900
+{'loss': 0.5236, 'grad_norm': 0.11849151328428414, 'learning_rate': 1.2177926206807294e-05, 'epoch': 0.75}
+{'loss': 0.5105, 'grad_norm': 0.12042794255553582, 'learning_rate': 1.1925273692425487e-05, 'epoch': 0.76}
+{'loss': 0.51, 'grad_norm': 0.11496413611318157, 'learning_rate': 1.1676336612788024e-05, 'epoch': 0.76}
+{'loss': 0.5157, 'grad_norm': 0.1110305884488815, 'learning_rate': 1.1431174353174411e-05, 'epoch': 0.77}
+{'loss': 0.5217, 'grad_norm': 0.11582344304406861, 'learning_rate': 1.118984539836051e-05, 'epoch': 0.77}
+{'loss': 0.5141, 'grad_norm': 0.11166169918011824, 'learning_rate': 1.0952407318666718e-05, 'epoch': 0.77}
+{'loss': 0.5193, 'grad_norm': 0.11117484834693865, 'learning_rate': 1.0718916756224243e-05, 'epoch': 0.78}
+{'loss': 0.5162, 'grad_norm': 0.11452770269287081, 'learning_rate': 1.0489429411462794e-05, 'epoch': 0.78}
+{'loss': 0.5109, 'grad_norm': 0.10768512830982009, 'learning_rate': 1.0264000029822999e-05, 'epoch': 0.79}
+{'loss': 0.5096, 'grad_norm': 0.1063488984886467, 'learning_rate': 1.0042682388696523e-05, 'epoch': 0.79}
+{'loss': 0.5071, 'grad_norm': 0.11647354192677008, 'learning_rate': 9.825529284597238e-06, 'epoch': 0.8}
+{'loss': 0.5245, 'grad_norm': 0.11505561581774287, 'learning_rate': 9.612592520566283e-06, 'epoch': 0.8}
+{'loss': 0.5242, 'grad_norm': 0.11007745128724987, 'learning_rate': 9.403922893814213e-06, 'epoch': 0.81}
+{'loss': 0.5118, 'grad_norm': 0.11327513098733785, 'learning_rate': 9.199570183603021e-06, 'epoch': 0.81}
+{'loss': 0.5036, 'grad_norm': 0.11094729777665871, 'learning_rate': 8.999583139371026e-06, 'epoch': 0.82}
+{'loss': 0.516, 'grad_norm': 0.11309554087433189, 'learning_rate': 8.804009469103467e-06, 'epoch': 0.82}
+{'loss': 0.5184, 'grad_norm': 0.1141373982773114, 'learning_rate': 8.612895827951451e-06, 'epoch': 0.83}
+{'loss': 0.5176, 'grad_norm': 0.11334247378096803, 'learning_rate': 8.426287807102173e-06, 'epoch': 0.83}
+{'loss': 0.5088, 'grad_norm': 0.11285057317283943, 'learning_rate': 8.244229922902865e-06, 'epoch': 0.84}
+{'loss': 0.5169, 'grad_norm': 0.10646358647425734, 'learning_rate': 8.066765606241163e-06, 'epoch': 0.84}
+[INFO|configuration_utils.py:423] 2025-03-04 02:47:00,069 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-900/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 02:47:00,070 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-900/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 02:47:01,171 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-900/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 02:47:01,172 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-900/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 02:47:01,173 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-900/special_tokens_map.json
+[2025-03-04 02:47:01,294] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step900 is about to be saved!
+[2025-03-04 02:47:01,299] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-900/global_step900/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 02:47:01,299] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-900/global_step900/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 02:47:01,308] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-900/global_step900/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 02:47:01,311] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-900/global_step900/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 02:47:02,983] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-900/global_step900/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 02:47:02,984] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-900/global_step900/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 02:47:03,715] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step900 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 02:47:03,720 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-800] due to args.save_total_limit
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▏       | 1000/1071 [2:05:59<08:50,  7.47s/it][INFO|trainer.py:3942] 2025-03-04 02:59:35,832 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-1000
+{'loss': 0.5094, 'grad_norm': 0.1063587330556064, 'learning_rate': 7.893937192184476e-06, 'epoch': 0.85}
+{'loss': 0.5122, 'grad_norm': 0.10965880995873442, 'learning_rate': 7.7257859098807e-06, 'epoch': 0.85}
+{'loss': 0.5112, 'grad_norm': 0.11365716796871607, 'learning_rate': 7.5623518727227975e-06, 'epoch': 0.85}
+{'loss': 0.5133, 'grad_norm': 0.10982112752830608, 'learning_rate': 7.403674068779505e-06, 'epoch': 0.86}
+{'loss': 0.5249, 'grad_norm': 0.10951818915442277, 'learning_rate': 7.249790351494575e-06, 'epoch': 0.86}
+{'loss': 0.508, 'grad_norm': 0.11147758969672161, 'learning_rate': 7.100737430656561e-06, 'epoch': 0.87}
+{'loss': 0.521, 'grad_norm': 0.1136603038664796, 'learning_rate': 6.956550863641562e-06, 'epoch': 0.87}
+{'loss': 0.5114, 'grad_norm': 0.1088053039912833, 'learning_rate': 6.817265046930789e-06, 'epoch': 0.88}
+{'loss': 0.5132, 'grad_norm': 0.1130974303213537, 'learning_rate': 6.682913207905095e-06, 'epoch': 0.88}
+{'loss': 0.5226, 'grad_norm': 0.11511087388426057, 'learning_rate': 6.5535273969184225e-06, 'epoch': 0.89}
+{'loss': 0.5178, 'grad_norm': 0.1134160296941527, 'learning_rate': 6.429138479652006e-06, 'epoch': 0.89}
+{'loss': 0.5304, 'grad_norm': 0.11020658121956065, 'learning_rate': 6.30977612975121e-06, 'epoch': 0.9}
+{'loss': 0.5076, 'grad_norm': 0.10766061869108504, 'learning_rate': 6.195468821746705e-06, 'epoch': 0.9}
+{'loss': 0.5188, 'grad_norm': 0.10922842022422519, 'learning_rate': 6.086243824261726e-06, 'epoch': 0.91}
+{'loss': 0.4991, 'grad_norm': 0.11118295759383552, 'learning_rate': 5.982127193507003e-06, 'epoch': 0.91}
+{'loss': 0.5128, 'grad_norm': 0.11792903940928351, 'learning_rate': 5.883143767064885e-06, 'epoch': 0.92}
+{'loss': 0.512, 'grad_norm': 0.10697863431870991, 'learning_rate': 5.789317157964237e-06, 'epoch': 0.92}
+{'loss': 0.514, 'grad_norm': 0.11641836701314, 'learning_rate': 5.700669749047387e-06, 'epoch': 0.92}
+{'loss': 0.5114, 'grad_norm': 0.10614349027397098, 'learning_rate': 5.617222687630611e-06, 'epoch': 0.93}
+{'loss': 0.5111, 'grad_norm': 0.11438462054165023, 'learning_rate': 5.5389958804593164e-06, 'epoch': 0.93}
+[INFO|configuration_utils.py:423] 2025-03-04 02:59:35,834 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 02:59:35,834 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 02:59:36,916 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 02:59:36,917 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 02:59:36,918 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/special_tokens_map.json
+[2025-03-04 02:59:37,043] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step1000 is about to be saved!
+[2025-03-04 02:59:37,048] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/global_step1000/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 02:59:37,049] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/global_step1000/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 02:59:37,057] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/global_step1000/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 02:59:37,060] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/global_step1000/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 02:59:39,481] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/global_step1000/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 02:59:39,482] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-1000/global_step1000/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 02:59:39,523] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step1000 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 02:59:39,528 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-900] due to args.save_total_limit
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1071/1071 [2:14:57<00:00,  7.48s/it][INFO|trainer.py:3942] 2025-03-04 03:08:34,012 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft/checkpoint-1071
+{'loss': 0.5101, 'grad_norm': 0.10815681956352943, 'learning_rate': 5.466007988959163e-06, 'epoch': 0.94}
+{'loss': 0.5189, 'grad_norm': 0.10829865740553574, 'learning_rate': 5.39827642478431e-06, 'epoch': 0.94}
+{'loss': 0.5111, 'grad_norm': 0.10368609164689867, 'learning_rate': 5.335817345663747e-06, 'epoch': 0.95}
+{'loss': 0.5153, 'grad_norm': 0.1070012391864802, 'learning_rate': 5.278645651546797e-06, 'epoch': 0.95}
+{'loss': 0.5057, 'grad_norm': 0.10553693218369802, 'learning_rate': 5.2267749810486445e-06, 'epoch': 0.96}
+{'loss': 0.5078, 'grad_norm': 0.11076946859072953, 'learning_rate': 5.180217708196773e-06, 'epoch': 0.96}
+{'loss': 0.5158, 'grad_norm': 0.10793104958972853, 'learning_rate': 5.138984939479077e-06, 'epoch': 0.97}
+{'loss': 0.5143, 'grad_norm': 0.10502202179807418, 'learning_rate': 5.103086511194337e-06, 'epoch': 0.97}
+{'loss': 0.5062, 'grad_norm': 0.11189345774055158, 'learning_rate': 5.072530987105742e-06, 'epoch': 0.98}
+{'loss': 0.5064, 'grad_norm': 0.11661556768142953, 'learning_rate': 5.047325656397932e-06, 'epoch': 0.98}
+{'loss': 0.5056, 'grad_norm': 0.10983506707901483, 'learning_rate': 5.02747653193814e-06, 'epoch': 0.99}
+{'loss': 0.5158, 'grad_norm': 0.10538818271429923, 'learning_rate': 5.012988348841782e-06, 'epoch': 0.99}
+{'loss': 0.5044, 'grad_norm': 0.10272286579320461, 'learning_rate': 5.003864563342878e-06, 'epoch': 0.99}
+{'loss': 0.5161, 'grad_norm': 0.11095261645090466, 'learning_rate': 5.000107351969537e-06, 'epoch': 1.0}
+[INFO|configuration_utils.py:423] 2025-03-04 03:08:34,014 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 03:08:34,014 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 03:08:35,117 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 03:08:35,118 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 03:08:35,118 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/special_tokens_map.json
+[2025-03-04 03:08:35,238] [INFO] [logging.py:128:log_dist] [Rank 0] [Torch] Checkpoint global_step1071 is about to be saved!
+[2025-03-04 03:08:35,244] [INFO] [logging.py:128:log_dist] [Rank 0] Saving model checkpoint: data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/global_step1071/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2025-03-04 03:08:35,244] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/global_step1071/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2025-03-04 03:08:35,253] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/global_step1071/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2025-03-04 03:08:35,256] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/global_step1071/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2025-03-04 03:08:36,960] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/global_step1071/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2025-03-04 03:08:36,961] [INFO] [engine.py:3536:_save_zero_checkpoint] zero checkpoint saved data/Qwen2.5-Math-1.5B-sft/checkpoint-1071/global_step1071/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2025-03-04 03:08:37,656] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step1071 is ready now!
+[INFO|trainer.py:4034] 2025-03-04 03:08:37,661 >> Deleting older checkpoint [data/Qwen2.5-Math-1.5B-sft/checkpoint-1000] due to args.save_total_limit
+[INFO|trainer.py:2657] 2025-03-04 03:08:38,482 >>
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1071/1071 [2:15:02<00:00,  7.56s/it]
+{'train_runtime': 8103.9262, 'train_samples_per_second': 16.91, 'train_steps_per_second': 0.132, 'train_loss': 0.5415200612235581, 'epoch': 1.0}
+***** train metrics *****
+  total_flos               =   454639GF
+  train_loss               =     0.5415
+  train_runtime            = 2:15:03.92
+  train_samples            =      93733
+  train_samples_per_second =      16.91
+  train_steps_per_second   =      0.132
+2025-03-04 03:08:38 - INFO - __main__ - *** Save model ***
+[INFO|trainer.py:3942] 2025-03-04 03:08:38,764 >> Saving model checkpoint to data/Qwen2.5-Math-1.5B-sft
+[INFO|configuration_utils.py:423] 2025-03-04 03:08:38,766 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/config.json
+[INFO|configuration_utils.py:909] 2025-03-04 03:08:38,767 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-04 03:08:39,908 >> Model weights saved in data/Qwen2.5-Math-1.5B-sft/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-04 03:08:39,909 >> tokenizer config file saved in data/Qwen2.5-Math-1.5B-sft/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-04 03:08:39,910 >> Special tokens file saved in data/Qwen2.5-Math-1.5B-sft/special_tokens_map.json
+2025-03-04 03:08:40 - INFO - __main__ - Model saved to data/Qwen2.5-Math-1.5B-sft
+[INFO|configuration_utils.py:423] 2025-03-04 03:08:40,033 >> Configuration saved in data/Qwen2.5-Math-1.5B-sft/config.json

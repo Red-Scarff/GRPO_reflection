@@ -1,0 +1,20 @@
+{"time":"2025-03-04T00:53:35.541572189+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/tione/notebook/Thinking_LLM/wandb/run-20250304_005335-7px5otxn/logs/debug-core.log"}
+{"time":"2025-03-04T00:53:35.75599955+08:00","level":"INFO","msg":"created new stream","id":"7px5otxn"}
+{"time":"2025-03-04T00:53:35.756034277+08:00","level":"INFO","msg":"stream: started","id":"7px5otxn"}
+{"time":"2025-03-04T00:53:35.756056365+08:00","level":"INFO","msg":"sender: started","stream_id":"7px5otxn"}
+{"time":"2025-03-04T00:53:35.756047186+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"7px5otxn"}
+{"time":"2025-03-04T00:53:35.756076963+08:00","level":"INFO","msg":"handler: started","stream_id":"7px5otxn"}
+{"time":"2025-03-04T00:53:36.350622531+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T01:47:31.740820149+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/7px5otxn/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-04T02:22:08.412858682+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/7px5otxn/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-04T02:42:51.829046924+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-03-04T02:43:11.818636734+08:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/7px5otxn/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-03-04T03:00:01.692826497+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/7px5otxn/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}
+{"time":"2025-03-04T03:08:40.096574358+08:00","level":"INFO","msg":"stream: closing","id":"7px5otxn"}
+{"time":"2025-03-04T03:08:40.096592646+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T03:08:40.097264726+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T03:08:41.347726719+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T03:08:41.995687781+08:00","level":"INFO","msg":"handler: closed","stream_id":"7px5otxn"}
+{"time":"2025-03-04T03:08:41.995727137+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7px5otxn"}
+{"time":"2025-03-04T03:08:41.995742246+08:00","level":"INFO","msg":"sender: closed","stream_id":"7px5otxn"}
+{"time":"2025-03-04T03:08:41.995829478+08:00","level":"INFO","msg":"stream: closed","id":"7px5otxn"}

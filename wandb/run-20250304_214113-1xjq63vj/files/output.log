@@ -1,0 +1,230 @@
+  9%|██████████▌                                                                                                               | 5/58 [11:34<2:02:51, 139.09s/it]Traceback (most recent call last):
+{'loss': 0.0, 'grad_norm': 0.03355495259165764, 'learning_rate': 5e-07, 'rewards/accuracy_reward': 0.09263393189758062, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.09263393189758062, 'reward_std': 0.12157316040247679, 'completion_length': 1024.0, 'kl': 0.0, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.035885103046894073, 'learning_rate': 2.5e-06, 'rewards/accuracy_reward': 0.09570312959840521, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.09570312959840521, 'reward_std': 0.14916479808744043, 'completion_length': 1024.0, 'kl': 6.227195262908936e-05, 'epoch': 0.09}
+  File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 280, in <module>
+    main(script_args, training_args, model_args)
+  File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 234, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 3692, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 678, in _prepare_inputs
+    wandb.log({"completions": wandb.Table(dataframe=df)})
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1873, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1587, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1417, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 674, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/data_types/utils.py", line 54, in history_dict_to_json
+    payload[key] = val_to_json(
+                   ^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/data_types/utils.py", line 155, in val_to_json
+    run.log_artifact(art)
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 3103, in log_artifact
+    return self._log_artifact(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 3250, in _log_artifact
+    self._assert_can_log_artifact(artifact)
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 3301, in _assert_can_log_artifact
+    expected_type = Artifact._expected_type(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 2370, in _expected_type
+    response = client.execute(
+               ^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 215, in wrapped_fn
+    return retrier(*args, **kargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/apis/public/api.py", line 79, in execute
+    return self._client.execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/urllib3/connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/home/anaconda3/envs/openr1/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/ssl.py", line 1278, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anaconda3/envs/openr1/lib/python3.11/ssl.py", line 1134, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 280, in <module>
+[rank0]:     main(script_args, training_args, model_args)
+[rank0]:   File "/home/tione/notebook/Thinking_LLM/open-r1/src/open_r1/grpo.py", line 234, in main
+[rank0]:     train_result = trainer.train(resume_from_checkpoint=checkpoint)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 2241, in train
+[rank0]:     return inner_training_loop(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/transformers/trainer.py", line 3692, in training_step
+[rank0]:     inputs = self._prepare_inputs(inputs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/trl/trainer/grpo_trainer.py", line 678, in _prepare_inputs
+[rank0]:     wandb.log({"completions": wandb.Table(dataframe=df)})
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 449, in wrapper
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1873, in log
+[rank0]:     self._log(data=data, step=step, commit=commit)
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1587, in _log
+[rank0]:     self._partial_history_callback(data, step, commit)
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 1417, in _partial_history_callback
+[rank0]:     self._backend.interface.publish_partial_history(
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/interface/interface.py", line 674, in publish_partial_history
+[rank0]:     data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/data_types/utils.py", line 54, in history_dict_to_json
+[rank0]:     payload[key] = val_to_json(
+[rank0]:                    ^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/data_types/utils.py", line 155, in val_to_json
+[rank0]:     run.log_artifact(art)
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 401, in wrapper_fn
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+[rank0]:     return func(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 3103, in log_artifact
+[rank0]:     return self._log_artifact(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 3250, in _log_artifact
+[rank0]:     self._assert_can_log_artifact(artifact)
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 3301, in _assert_can_log_artifact
+[rank0]:     expected_type = Artifact._expected_type(
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/artifacts/artifact.py", line 2370, in _expected_type
+[rank0]:     response = client.execute(
+[rank0]:                ^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 215, in wrapped_fn
+[rank0]:     return retrier(*args, **kargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 134, in __call__
+[rank0]:     result = self._call_fn(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/apis/public/api.py", line 79, in execute
+[rank0]:     return self._client.execute(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+[rank0]:     result = self._get_result(document, *args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+[rank0]:     return self.transport.execute(document, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+[rank0]:     request = self.session.post(self.url, **post_args)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/sessions.py", line 637, in post
+[rank0]:     return self.request("POST", url, data=data, json=json, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+[rank0]:     resp = self.send(prep, **send_kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+[rank0]:     r = adapter.send(request, **kwargs)
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+[rank0]:     resp = conn.urlopen(
+[rank0]:            ^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+[rank0]:     response = self._make_request(
+[rank0]:                ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+[rank0]:     response = conn.getresponse()
+[rank0]:                ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/site-packages/urllib3/connection.py", line 516, in getresponse
+[rank0]:     httplib_response = super().getresponse()
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/http/client.py", line 1374, in getresponse
+[rank0]:     response.begin()
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/http/client.py", line 318, in begin
+[rank0]:     version, status, reason = self._read_status()
+[rank0]:                               ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/http/client.py", line 279, in _read_status
+[rank0]:     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+[rank0]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/socket.py", line 705, in readinto
+[rank0]:     return self._sock.recv_into(b)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/ssl.py", line 1278, in recv_into
+[rank0]:     return self.read(nbytes, buffer)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/anaconda3/envs/openr1/lib/python3.11/ssl.py", line 1134, in read
+[rank0]:     return self._sslobj.read(len, buffer)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: KeyboardInterrupt

@@ -1,0 +1,9 @@
+{"time":"2025-03-04T21:58:29.586779311+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"/home/tione/notebook/Thinking_LLM/wandb/run-20250304_215829-2ud00tmn/logs/debug-core.log"}
+{"time":"2025-03-04T21:58:29.803203886+08:00","level":"INFO","msg":"created new stream","id":"2ud00tmn"}
+{"time":"2025-03-04T21:58:29.803247192+08:00","level":"INFO","msg":"stream: started","id":"2ud00tmn"}
+{"time":"2025-03-04T21:58:29.80326125+08:00","level":"INFO","msg":"handler: started","stream_id":"2ud00tmn"}
+{"time":"2025-03-04T21:58:29.803277119+08:00","level":"INFO","msg":"sender: started","stream_id":"2ud00tmn"}
+{"time":"2025-03-04T21:58:29.803292048+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"2ud00tmn"}
+{"time":"2025-03-04T21:58:30.574484733+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T22:05:42.397309911+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/2ud00tmn/file_stream\": unexpected EOF"}
+{"time":"2025-03-04T22:08:40.988895552+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/redscarff-sun-yat-sen-university/huggingface/2ud00tmn/file_stream\": dial tcp 35.186.228.49:443: connect: connection timed out"}

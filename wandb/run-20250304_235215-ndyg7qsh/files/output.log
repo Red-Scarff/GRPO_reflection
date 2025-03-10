@@ -1,0 +1,41 @@
+100%|██████████| 58/58 [2:14:22<00:00, 142.79s/it][INFO|trainer.py:2657] 2025-03-05 02:06:39,553 >>
+{'loss': 0.0, 'grad_norm': 0.03355889767408371, 'learning_rate': 5e-07, 'rewards/accuracy_reward': 0.09263393189758062, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.09263393189758062, 'reward_std': 0.12157316040247679, 'completion_length': 1024.0, 'kl': 0.0, 'epoch': 0.02}
+{'loss': 0.0, 'grad_norm': 0.0348099023103714, 'learning_rate': 2.5e-06, 'rewards/accuracy_reward': 0.08677455736324191, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.08677455736324191, 'reward_std': 0.14025939954444766, 'completion_length': 1024.0, 'kl': 6.142258644104004e-05, 'epoch': 0.09}
+{'loss': 0.0, 'grad_norm': 0.03748725727200508, 'learning_rate': 2.956412726139078e-06, 'rewards/accuracy_reward': 0.0959821474738419, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.0959821474738419, 'reward_std': 0.15160154048353433, 'completion_length': 1024.0, 'kl': 9.014606475830079e-05, 'epoch': 0.17}
+{'loss': 0.0, 'grad_norm': 0.0376962311565876, 'learning_rate': 2.7836719084521715e-06, 'rewards/accuracy_reward': 0.12946429271250964, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.12946429271250964, 'reward_std': 0.1791528148576617, 'completion_length': 1024.0, 'kl': 0.0002288222312927246, 'epoch': 0.26}
+{'loss': 0.0, 'grad_norm': 0.04338863119482994, 'learning_rate': 2.4946839873611927e-06, 'rewards/accuracy_reward': 0.1678571505472064, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.1678571505472064, 'reward_std': 0.21545737627893685, 'completion_length': 1024.0, 'kl': 0.0007044792175292969, 'epoch': 0.34}
+{'loss': 0.0001, 'grad_norm': 0.0372389554977417, 'learning_rate': 2.1156192081791355e-06, 'rewards/accuracy_reward': 0.172544651851058, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.172544651851058, 'reward_std': 0.22083909958600997, 'completion_length': 1024.0, 'kl': 0.001360607147216797, 'epoch': 0.43}
+{'loss': 0.0001, 'grad_norm': 0.03798745572566986, 'learning_rate': 1.6808050203829845e-06, 'rewards/accuracy_reward': 0.1875000087544322, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.1875000087544322, 'reward_std': 0.22371693290770053, 'completion_length': 1024.0, 'kl': 0.0017282485961914063, 'epoch': 0.51}
+{'loss': 0.0001, 'grad_norm': 0.04040152579545975, 'learning_rate': 1.2296174432791415e-06, 'rewards/accuracy_reward': 0.18794643729925156, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.18794643729925156, 'reward_std': 0.2177910977974534, 'completion_length': 1024.0, 'kl': 0.0019754409790039063, 'epoch': 0.6}
+{'loss': 0.0001, 'grad_norm': 0.038477376103401184, 'learning_rate': 8.029152419343472e-07, 'rewards/accuracy_reward': 0.18258929392322898, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.18258929392322898, 'reward_std': 0.2200133915990591, 'completion_length': 1024.0, 'kl': 0.0019832611083984374, 'epoch': 0.68}
+{'loss': 0.0001, 'grad_norm': 0.04052486643195152, 'learning_rate': 4.3933982822017883e-07, 'rewards/accuracy_reward': 0.2058035809546709, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.2058035809546709, 'reward_std': 0.22804067321121693, 'completion_length': 1024.0, 'kl': 0.0019329071044921875, 'epoch': 0.77}
+{'loss': 0.0001, 'grad_norm': 0.040861088782548904, 'learning_rate': 1.718159615201853e-07, 'rewards/accuracy_reward': 0.1816964376717806, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.1816964376717806, 'reward_std': 0.21294338293373585, 'completion_length': 1024.0, 'kl': 0.001860809326171875, 'epoch': 0.85}
+{'loss': 0.0001, 'grad_norm': 0.039606206119060516, 'learning_rate': 2.4570139579284723e-08, 'rewards/accuracy_reward': 0.1875000074505806, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.1875000074505806, 'reward_std': 0.21926386915147306, 'completion_length': 1024.0, 'kl': 0.001879119873046875, 'epoch': 0.94}
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+100%|██████████| 58/58 [2:14:22<00:00, 139.01s/it]
+{'train_runtime': 8064.7338, 'train_samples_per_second': 0.93, 'train_steps_per_second': 0.007, 'train_loss': -0.0008574879618428254, 'rewards/accuracy_reward': 0.19196429445097843, 'rewards/format_reward': 0.0, 'rewards/reflection_reward': 0.0, 'reward': 0.19196429445097843, 'reward_std': 0.22407651568452516, 'completion_length': 1024.0, 'kl': 0.001903533935546875, 'epoch': 0.99}
+***** train metrics *****
+  total_flos               =        0GF
+  train_loss               =    -0.0009
+  train_runtime            = 2:14:24.73
+  train_samples            =       7500
+  train_samples_per_second =       0.93
+  train_steps_per_second   =      0.007
+2025-03-05 02:06:39 - INFO - __main__ - *** Save model ***
+[INFO|trainer.py:3942] 2025-03-05 02:06:40,037 >> Saving model checkpoint to data/Qwen-2.5-1.5B-Thinking
+[INFO|configuration_utils.py:423] 2025-03-05 02:06:40,039 >> Configuration saved in data/Qwen-2.5-1.5B-Thinking/config.json
+[INFO|configuration_utils.py:909] 2025-03-05 02:06:40,039 >> Configuration saved in data/Qwen-2.5-1.5B-Thinking/generation_config.json
+[INFO|modeling_utils.py:3040] 2025-03-05 02:06:41,310 >> Model weights saved in data/Qwen-2.5-1.5B-Thinking/model.safetensors
+[INFO|tokenization_utils_base.py:2500] 2025-03-05 02:06:41,312 >> tokenizer config file saved in data/Qwen-2.5-1.5B-Thinking/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2509] 2025-03-05 02:06:41,312 >> Special tokens file saved in data/Qwen-2.5-1.5B-Thinking/special_tokens_map.json
+2025-03-05 02:06:41 - INFO - __main__ - Model saved to data/Qwen-2.5-1.5B-Thinking
+[INFO|configuration_utils.py:423] 2025-03-05 02:06:41,476 >> Configuration saved in data/Qwen-2.5-1.5B-Thinking/config.json
+2025-03-05 02:06:41 - INFO - __main__ - *** Evaluate ***
+[INFO|trainer.py:4258] 2025-03-05 02:06:41,478 >>
+***** Running Evaluation *****
+[INFO|trainer.py:4260] 2025-03-05 02:06:41,478 >>   Num examples = 5000
+[INFO|trainer.py:4263] 2025-03-05 02:06:41,478 >>   Batch size = 16
+  6%|▌         | 18/313 [04:30<1:17:10, 15.70s/it]
