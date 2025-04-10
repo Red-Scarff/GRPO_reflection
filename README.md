@@ -1,4 +1,6 @@
-# Thinking_LLM
+# GRPO_reflection
+
+This repository is the official implementation of the paper: GRPO and Reflection Reward for Mathematical Reasoning in Large Language Models 
 
 ## Overview
 This repository implements the reasoning methodology from DeepSeek R1-zero, extending the original Open R1 framework with a novel reflection reward mechanism. Our implementation enhances the reasoning process by encouraging self-evaluation and iterative improvement through a composite reward function combining original task rewards with reflection-based incentives.
